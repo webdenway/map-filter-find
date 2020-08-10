@@ -21,3 +21,8 @@ const numbers = [3, 4, 5, 6, 7, 8];
 // console.log(output);
 
 // ====filter===
+// const bigger = numbers.filter(x => x > 5);
+const bigger = numbers.find(x => x > 5);
+
+
+console.log(bigger);
