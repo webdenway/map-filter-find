@@ -8,7 +8,7 @@ const students = [
 const names = students.map(s => s.name);
 
 const ids = students.map(i => i.id)
-const bigger = students.filter(k => k.id > 30);
+const bigger = students.filter(k => k.id > 20);
 const biggerOne = students.find(k => k.id > 30);
 
 console.log(bigger);
