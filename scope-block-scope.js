@@ -11,11 +11,23 @@
 // console.log(bonus);
 // console.log(output);
 
-var globalVar = "this is global variable" //global scope
+let globalVar = "this is global variable" //global scope
 
 // local variable-- function scope
 
 function myFunction() {
-    var localVar = "This is local variable";
-    console.log(localVar);
+    let localVar = "This is local variable"; //let-block scope. var- function scopeS
+
+    console.log(globalVar);
+
+
+    if (true) {
+        let insideIf = "i am inside if"
+        console.log(insideIf);
+    }
+    console.log(insideIf);
 }
+
+
+// console.log(localVar);
+myFunction()
